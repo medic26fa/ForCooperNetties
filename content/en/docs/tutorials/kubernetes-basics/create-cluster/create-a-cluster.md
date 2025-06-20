@@ -33,7 +33,7 @@ The _minikube start_ command:
 
 2. **Downloads Kubernetes components** — Minikube downloads either the version of Kubernetes you requested or the latest stable version by default.
 
-3. **Creates a single-node cluster** — This node acts as both the <a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/" target="_blank">control plane and the worker</a>.
+3. **Creates a single-node cluster** — This node acts as both the [control plane and the worker](https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/).
 
 4. **Configures kubectl** — So you can run commands and manage your cluster from the terminal.
 

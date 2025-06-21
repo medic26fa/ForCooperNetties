@@ -39,7 +39,7 @@ The _minikube start_ command:
 
 You should now have a running Kubernetes cluster in your terminal! Minikube started a virtual environment for you, and a Kubernetes cluster is now running in that environment. 
 
-### Optional: Trye the Minikube Dashboard!
+### Optional: Try the Minikube Dashboard!
 
 Prefer a GUI? You can launch a visual interface for your cluster using:
 
@@ -84,9 +84,9 @@ You just launched a real Kubernetes cluster on your machine, connected it to you
 
 Congratulations! In this tutorial, you:
 
-✅ Created a single-node Kubernetes cluster on your local machine.
-✅ Installed the Kubernetes control plane and worker (in this case as the single node).
-✅ Configured kubectl to communicate with the newly created cluster.
+✅ Created a single-node Kubernetes cluster on your local machine. <br/>
+✅ Installed the Kubernetes control plane and worker (in this case as the single node). <br/>
+✅ Configured kubectl to communicate with the newly created cluster. <br/>
 ✅ Set up a fully functioning local environment where you can deploy apps, experiment, and manage everything with Kubernetes commands.
 
 In the next tutorial, you'll be able to deploy your first pod - the basic unit of work in Kubernetes.

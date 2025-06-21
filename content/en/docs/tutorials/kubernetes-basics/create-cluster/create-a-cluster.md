@@ -6,7 +6,7 @@ weight: 1
 **Difficulty**: Beginner
 **Estimated Time:** 10 minutes
 
-A Kubernetes cluster is a set of machines that run your containerized applications. In this tutorial, you’ll create a local cluster for development using _Minikube_, Kubernetes' lightweight solution for creating a VM on your local machine and deploying a simple cluster containing only one node. In addition, you'll use kubectl - the command-line tool used to interact with your cluster.
+A Kubernetes cluster is a set of machines that run your containerized applications. In this tutorial, you’ll create a local cluster for development using _Minikube_, Kubernetes' lightweight solution for creating a VM on your local machine and for deploying a simple cluster containing only one node. In addition, you'll use kubectl - the command-line tool used to interact with your cluster.
 
 ### Before You Begin
 

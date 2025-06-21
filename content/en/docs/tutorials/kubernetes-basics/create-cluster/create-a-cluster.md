@@ -3,8 +3,11 @@ title: "Module 1 - Create a Kubernetes Cluster"
 weight: 1
 --- 
 
-**Difficulty**: Beginner
-**Estimated Time:** 10 minutes
+## Objectives
+- Learn what a Kubernetes cluster is.
+- Use minikube to create Kubernetes cluster on your computer.
+- Use basic kubectl commands to inspect your cluster.
+
 
 A Kubernetes cluster is a set of machines that run your containerized applications. In this tutorial, you’ll create a local cluster for development using _minikube_, Kubernetes' lightweight solution for creating a VM on your local machine and for deploying a simple cluster containing only one node. In addition, you'll use kubectl - the command-line tool for interacting with your cluster.
 

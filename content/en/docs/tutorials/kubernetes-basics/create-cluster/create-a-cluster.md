@@ -6,13 +6,13 @@ weight: 1
 **Difficulty**: Beginner
 **Estimated Time:** 10 minutes
 
-A Kubernetes cluster is a set of machines that run your containerized applications. In this tutorial, you’ll create a local cluster for development using _Minikube_, Kubernetes' lightweight solution for creating a VM on your local machine and for deploying a simple cluster containing only one node. In addition, you'll use kubectl - the command-line tool for interacting with your cluster.
+A Kubernetes cluster is a set of machines that run your containerized applications. In this tutorial, you’ll create a local cluster for development using _minikube_, Kubernetes' lightweight solution for creating a VM on your local machine and for deploying a simple cluster containing only one node. In addition, you'll use kubectl - the command-line tool for interacting with your cluster.
 
 ### Before You Begin
 
 If you haven't already, first [install minikube]({{< ref "/docs/start" >}}).  
 
-{{< note >}} You only need Step 1: installation, the rest is covered here. To check if Minikube is properly installed, run the *minikube version* command:
+{{< note >}} You only need Step 1: installation, the rest is covered here. To check if minikube is properly installed, run the *minikube version* command:
 
 ```shell
 minikube version
@@ -29,17 +29,17 @@ minikube start
 
 The _minikube start_ command:
 
-1. **Chooses and launches a driver** — Minikube picks a backend to host your cluster, such as Docker or hyperkit. {{< note >}} If Minikube couldn't auto-detect a supported driver when running the command, ensure an appropriate driver is installed and try again. You can also specify a driver in the command (for example: `minikube start --driver=docker`).
+1. **Chooses and launches a driver** — minikube picks a backend to host your cluster, such as Docker or hyperkit. {{< note >}} If minikube couldn't auto-detect a supported driver when running the command, ensure an appropriate driver is installed and try again. You can also specify a driver in the command (for example: `minikube start --driver=docker`).
 
-2. **Downloads Kubernetes components** — Minikube downloads either the version of Kubernetes you requested or the latest stable version by default.
+2. **Downloads Kubernetes components** — minikube downloads either the version of Kubernetes you requested or the latest stable version by default.
 
 3. **Creates a single-node cluster** — This node acts as both the [control plane and the worker](https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/).
 
 4. **Configures kubectl** — So you can run commands and manage your cluster from the terminal.
 
-You should now have a running Kubernetes cluster in your terminal! Minikube started a virtual environment for you, and a Kubernetes cluster is now running in that environment. 
+You should now have a running Kubernetes cluster in your terminal! minikube started a virtual environment for you, and a Kubernetes cluster is now running in that environment. 
 
-### Optional: Try the Minikube Dashboard!
+### Optional: Try the minikube Dashboard!
 
 Prefer a GUI? You can launch a visual interface for your cluster using:
 
@@ -72,7 +72,7 @@ Finally, to view the nodes in the cluster, run the *kubectl get nodes* command:
 kubectl get nodes
 ```
 
-The `kubectl get nodes` command shows you all the nodes in your Kubernetes cluster. Recall that a node is a machine (virtual or physical) that is part of your Kubernetes cluster. In a Minikube cluster, you'll usually see just one node. This command is helpful for checking if nodes are ready to run workloads and when debugging issues.
+The `kubectl get nodes` command shows you all the nodes in your Kubernetes cluster. Recall that a node is a machine (virtual or physical) that is part of your Kubernetes cluster. In a minikube cluster, you'll usually see just one node. This command is helpful for checking if nodes are ready to run workloads and when debugging issues.
 
 
 

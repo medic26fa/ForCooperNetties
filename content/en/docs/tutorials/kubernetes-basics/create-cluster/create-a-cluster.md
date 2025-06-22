@@ -32,7 +32,9 @@ minikube start
 
 The _minikube start_ command:
 
-1. **Chooses and launches a driver** — minikube picks a backend to host your cluster, such as Docker or hyperkit. {{< note >}} If minikube couldn't auto-detect a supported driver when running the command, ensure an appropriate driver is installed and try again. You can also specify a driver in the command (for example: `minikube start --driver=docker`).
+1. **Chooses and launches a driver** — minikube picks a backend to host your cluster, such as Docker or hyperkit.
+
+  {{< note >}} If minikube couldn't auto-detect a supported driver when running the command, ensure an appropriate driver is installed and try again.   You can also specify a driver in the command (for example: `minikube start --driver=docker`).
 
 2. **Downloads Kubernetes components** — minikube downloads either the version of Kubernetes you requested or the latest stable version by default.
 

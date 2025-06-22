@@ -91,7 +91,7 @@ Now that your pod is up and running, let's use it to practice some basic kubectl
 
 ### Check the Pod's Status
 
-First, let's check the pod's status:
+First, let's use the `kubectl get` command to look for existing Pods:
 
 ```shell
 kubectl get pods
@@ -101,7 +101,7 @@ If your pod is up and running, you'll see status "Running" in the return.
 
 ### View the Pod's Log
 
-Next, let's try viewing the pod's log to see what it did:
+The `kubectl logs` command print the logs for a container in a pod or specified resource. If the pod has only one container, the container name is optional. Try viewing the pod's log to see what it did:
 
 ```shell
 kubectl logs hello
@@ -111,7 +111,7 @@ As you can see in your YAML script, we asked echo to print a message, so the log
 
 ### Get Pod Details
 
-Now that you've viewed the log, let's get some pod details using the `kubectl describe` command:
+Now that you've viewed the log, let's use the `kubectl describe` command to get some pod details:
 
 ```shell
 kubectl describe pod hello
@@ -126,8 +126,15 @@ Finally, try deleting your pod:
 ```shell
 kubectl delete pod hello
 ```
+When you request deletion of a Pod, the cluster records and tracks the intended grace period before the Pod is allowed to be forcefully killed. By default, the grace period for deleting a Pod in Kubernetes is 30 seconds.
 
-Then recreating it:
+This means that when you run the `kubectl delete` command, Kubernetes:
+
+- Sends a SIGTERM [SIGTERM](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/) signal to the container(s) in the Pod.
+- Waits up to 30 seconds for the Pod to shut down cleanly (this is the grace period).
+- If it’s still running after 30 seconds, it forcefully kills the Pod with a SIGKILL.
+
+Try recreating the pod:
 
 ```shell
 kubectl apply -f hello-pod.yaml

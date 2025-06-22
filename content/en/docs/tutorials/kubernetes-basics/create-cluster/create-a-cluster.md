@@ -15,7 +15,7 @@ A Kubernetes cluster is a set of machines that run your containerized applicatio
 
 If you haven't already, first [install minikube]({{< ref "/docs/start" >}}).  
 
-{{< note >}} You only need Step 1: installation, the rest is covered here. To check if minikube is properly installed, run the *minikube version* command:
+{{< note >}} You only need _Step 1: installation_, the rest is covered here. To check if minikube is properly installed, run the *minikube version* command:
 
 ```shell
 minikube version

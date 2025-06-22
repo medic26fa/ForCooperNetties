@@ -130,7 +130,7 @@ When you request deletion of a Pod, the cluster records and tracks the intended 
 
 This means that when you run the `kubectl delete` command, Kubernetes:
 
-- Sends a SIGTERM [SIGTERM](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/) signal to the container(s) in the Pod.
+- Sends a [SIGTERM](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/) signal to the container(s) in the Pod.
 - Waits up to 30 seconds for the Pod to shut down cleanly (this is the grace period).
 - If it’s still running after 30 seconds, it forcefully kills the Pod with a SIGKILL.
 

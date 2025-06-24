@@ -146,10 +146,10 @@ Nice work! When you run the `kubectl apply -f hello-pod.yaml` command, Kubernete
 
 In this tutorial, you:
 
-✅ Wrote and applied a pod manifest using YAML <br/>
-✅ Used kubectl to deploy a pod to your cluster <br/>
-✅ Explored your pod’s status, logs, and details <br/>
-✅ Practiced common pod operations like delete and recreate <br/>
+- Wrote and applied a pod manifest using YAML <br/>
+- Used kubectl to deploy a pod to your cluster <br/>
+- Explored your pod’s status, logs, and details <br/>
+- Practiced common pod operations like delete and recreate <br/>
 
 Manually launching a unit of execution (a pod) is useful for learning, testing, and short-lived workloads, but in the real world you'll likely be launching a full-blown app. For that you'll need a _Deployment_. 
 

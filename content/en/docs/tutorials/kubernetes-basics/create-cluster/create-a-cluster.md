@@ -89,10 +89,10 @@ You just launched a real Kubernetes cluster on your machine, connected it to you
 
 Congratulations! In this tutorial, you:
 
-✅ Created a single-node Kubernetes cluster on your local machine. <br/>
-✅ Installed the Kubernetes control plane and worker (in this case as the single node). <br/>
-✅ Configured kubectl to communicate with the newly created cluster. <br/>
-✅ Set up a fully functioning local environment where you can deploy apps, experiment, and manage everything with Kubernetes commands.
+- Created a single-node Kubernetes cluster on your local machine. <br/>
+- Installed the Kubernetes control plane and worker (in this case as the single node). <br/>
+- Configured kubectl to communicate with the newly created cluster. <br/>
+- Set up a fully functioning local environment where you can deploy apps, experiment, and manage everything with Kubernetes commands.
 
 In the next tutorial, you'll be able to deploy your first pod - the basic unit of work in Kubernetes.
 

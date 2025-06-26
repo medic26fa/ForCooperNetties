@@ -16,7 +16,9 @@ In this tutorial, you’ll manually deploy a pod using a simple YAML script. Thi
 
 ### Before You Begin
 
-You should already have minikube and kubectl installed. If not, [install minikube]({{< ref "/docs/start" >}}).  To check if minikube and kubectl are properly installed, run the *version* commands:
+You should already have minikube and kubectl installed. If not, refer to Module 1 to [install minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/).  
+
+To check if minikube and kubectl are properly installed, run the *version* commands:
 
 ```shell
 kubectl version --client

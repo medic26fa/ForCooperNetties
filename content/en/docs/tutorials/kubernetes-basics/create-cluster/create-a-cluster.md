@@ -380,6 +380,8 @@ Prefer a GUI? You can launch a visual interface for your cluster using:
 minikube dashboard
 ```
 
+Learn more about the Dashboard in our [documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+
 ## Step 2 - Inspect Your Cluster
 
 Let's use kubectl to find out some details about the cluster you just created! Run the *kubectl version* command:
